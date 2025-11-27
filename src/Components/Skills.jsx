@@ -1,4 +1,4 @@
-import { title } from "framer-motion/m";
+
 import { useState } from "react";
  
 export const Skills = () =>{
