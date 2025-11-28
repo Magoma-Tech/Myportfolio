@@ -15,7 +15,7 @@ export const HeroSection = () => {
                     
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    I am curious Medical Laboratory Technologist driven by precision, problem-solving, and the future of diagnosic science. I work to ensure every result is accurate, meaningfull, and contributes to better healthcare outcomes.
+                    I am curious Medical Laboratory Technologist driven by precision, problem-solving, and the future of diagnosic science. I work to ensure every result is accurate, meaningful, and contributes to better healthcare outcomes.
                 </p>
 
                 <div className=" pt-4 opacity-0 animate-fade-in-delay-4">

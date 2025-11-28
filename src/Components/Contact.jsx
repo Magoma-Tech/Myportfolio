@@ -18,7 +18,7 @@ export const Contact = () => {
             </h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl max-auto">
-                I am always open to collaborations,projects, or professional conversations.Reach out and I will get back to you shortly.
+                I am always open to collaborations,projects,or professional conversations.Reach out and I will get back to you shortly.
             </p>
 
             <p>

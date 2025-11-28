@@ -32,7 +32,7 @@ export const About = () => {
                         <h3 className="text-3x1 font-bold text-primary">Current Interests:</h3>
                         <ul className="space-y-3">
                             <li>Emerging healthcare technology.</li>
-                            <li>Automation and lab-systmes.</li>
+                            <li>Automation and lab-systm.</li>
                             <li>Web development (HTML, CSS, Javascript, React, Tailwindcss)</li>
                             <li>Data literacy and digital transformation in medicine.</li>
                             <li>Writing educational medical-lab content.</li>
