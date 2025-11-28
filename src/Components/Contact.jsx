@@ -1,15 +1,26 @@
 import { Facebook, Linkedin, Mail,MapPin,Phone, Twitter,Send } from "lucide-react";
+import React, {useRef} from "react";
+import  emailjs from "@emailjs/browser";
 
 
 export const Contact = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    const form =useRef();
 
-        setTimeout(() =>{
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm("service_w4pz062" , "template_qbxxiyt" , form.current, "GlT73xCGNe8M6Jhml")
+        .then((result) =>{
+            alert("Message sent - check your inbox");
+            e.target.reset();
+        }, (error) =>{
+            console.error(error.text);
+            alert("Failed to send message. Check console");
+        });
+    };
 
-        }, 1500)
-    }
+
+
     return(
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
            <div className="container mx-auto max-w-5xl"> 
@@ -96,13 +107,11 @@ export const Contact = () => {
                     <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
                     <form className="space-y-6"
-                       action="brianomwenga2@gmail.com"
-                       method="POST"
-                       
-                    >
+                       ref={form} onSubmit={sendEmail} >
+                    
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium mb-2">Your Name</label>
-                            <input type="text" id="name" name="name" required
+                            <input type="text" id="name" name=" user_name" required
                             className="w-full px-4 py-3 rounded-md border border-input bg-backgound focus:outline-hidden focus:ring-2 focus:ring-ring-primary"
                             placeholder="Brian Omwenga......"
                             />
@@ -110,7 +119,7 @@ export const Contact = () => {
 
                         <div>
                             <label htmlFor="Email" className="block text-sm font-medium mb-2">Your Email</label>
-                            <input type="email" id="email" name="email" required
+                            <input type="email" id="email" name=" user_email" required
                             className="w-full px-4 py-3 rounded-md border border-input bg-backgound focus:outline-hidden focus:ring-2 focus:ring-ring-primary"
                             placeholder="brianomwenga2@gmail.com......"
                             />
