@@ -6,11 +6,15 @@ import { About } from "../Components/About";
 import { Skills } from "../Components/Skills";
 import { Contact } from "../Components/Contact";
 import { Footer } from "../Components/Footer";
+import { GoogleAnalytics } from "../Components/GoogleAnalytics";
 
 
 export const Home = () =>{
     return(
         <div className="min-h-screen bg-backgound text-foreground overflow-x-hidden">
+
+          < GoogleAnalytics measurementId="G-TX6QBG42PJ" />
+          
      { /*Theme Toggle */}
        <ThemeToggle />
 
